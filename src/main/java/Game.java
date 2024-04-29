@@ -8,9 +8,7 @@ public class Game {
         } else{
             int strikes = 0;
             for (int i = 0; i < guessNumber.length(); i++){
-                char charAt = guessNumber.charAt(i);
-                int indexOf = question.indexOf(charAt);
-                if(indexOf == i){
+                if(question.indexOf(guessNumber.charAt(i)) == i){
                     strikes++;
                 }
 
