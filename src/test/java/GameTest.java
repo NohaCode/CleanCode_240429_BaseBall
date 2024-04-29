@@ -23,4 +23,11 @@ class GameTest {
             game.guess(null);
         });
     }
+
+    @Test
+    void throwExceptionWhenInputLengthIsUnmathced() {
+        assertThrows(IllegalArgumentException.class, ()-> {
+            game.guess("12");
+        });
+    }
 }
