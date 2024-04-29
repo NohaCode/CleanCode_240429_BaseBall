@@ -23,6 +23,7 @@ class GameTest {
         assertIllegalArgumentException("12");
         assertIllegalArgumentException("1234");
         assertIllegalArgumentException("12s");
+        assertIllegalArgumentException("121");
     }
 
     private void assertIllegalArgumentException(String guessNumber) {
